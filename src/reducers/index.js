@@ -10,7 +10,6 @@ const reminder = (action) => {
 
 const removeReminderById =(state, id) =>{
   const reminders = state.filter(reminder => reminder.id !== id);
-  // console.log('new reduced reminders ',reminders);
   return reminders;
 }
 
@@ -19,7 +18,6 @@ const reminders = (state =[], action) => {
     switch(action.type){
         case Constants.ADD_REMINDER:
             reminders = [...state, reminder(action)];
-            // console.log('reminders in the state ',reminders);
             return reminders;
         case Constants.DELETE_REMINDER:
             reminders = removeReminderById(state,action.id);

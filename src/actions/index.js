@@ -5,8 +5,6 @@ export const AddReminder = (text) =>{
         type:Constants.ADD_REMINDER,
         text
     }
-    // console.log('Action in AddReminder ', action);
-
     return action;
 }
 
@@ -15,8 +13,6 @@ export const DeleteReminder = (id) =>{
         type:Constants.DELETE_REMINDER,
         id
     }
-    // console.log('Action in DeleteReminder ', action);
-
     return action;
 }
 
