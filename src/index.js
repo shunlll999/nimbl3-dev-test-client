@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom';
-import Routes from './routes/Routes';
+import Routes from './routes';
 import registerServiceWorker from './registerServiceWorker';
 
 
